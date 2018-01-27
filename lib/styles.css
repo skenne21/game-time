@@ -5,12 +5,19 @@ canvas {
   border: 5px solid black;
 }
 
-
 p {
   display: inline-block;
 }
-  
 
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 4em;
+  margin-bottom: 2em;
+}
+  
 .game {
   display: block;
   margin: 0 auto;
@@ -19,3 +26,33 @@ p {
 .user-score {
   margin-right: 80px;
 }
+
+.end-game {
+  /*position: absolute;*/
+  /*z-index: 101;*/
+  /*top: 0;*/
+  /*left: 165px;*/
+  height: 800px;
+  width: 1000px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  background-color: #483D8B;
+  color: #eee;
+}
+
+.replay-button {
+  height: 40px;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 2em;
+}
+
+.replay-button:hover {
+  background-color: #00BFFF;
+}
+
+.hide-end-game {
+  display: none;
+}
+
