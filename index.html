@@ -6,10 +6,21 @@
     <link rel="stylesheet" type="text/css" href="../lib/styles.css">
   </head>
   <body>
+    <section class="start-game">
+      <h1>BREAK OUT!!!!</h1>
+      <h3>Directions:</h3>
+      <div>
+        <p>Use the ball to break all the blocks to Win!</p>
+        <p> Use your mouse to control the paddle, move it right and left to hit the ball and break the blocks.</p>
+        <p>Game Over if you missed the paddle and the ball hits the floor</p>
+      </div>
+      <h3>Start Game By Clicking The Start Button!!!</h3>
+      <button class="start-btn">START</button>
+    </section>
     <section class="game">
-      <p>YOUR SCORE: <span class="user-score"></span></p>
+      <p class="score-text">YOUR SCORE: <span class="user-score"></span></p>
       <canvas id="game" width="1000" height="800"></canvas>
-      <p>HIGH SCORE: <span class="high-score"></span></p>
+      <p class="score-text">HIGH SCORE: <span class="high-score"></span></p>
       
     </section>
     <script src="main.bundle.js"></script>
