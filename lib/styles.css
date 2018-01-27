@@ -3,13 +3,34 @@ canvas {
   display: inline-block;
   vertical-align: top;
   border: 5px solid black;
+  z-index: 1;
 }
 
+div {
+  margin: 0 auto;
+  width: 80%;
+
+}
 
 p {
+  font-size: 1.3em; 
+}
+
+h1 {
+  font-size: 3em;
+  margin: 10px;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+}
+
+
+
+.score-text {
   display: inline-block;
 }
-  
 
 .game {
   display: block;
@@ -18,4 +39,29 @@ p {
 
 .user-score {
   margin-right: 80px;
+}
+
+.start-game {
+  display: block;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 430px;
+  width: 600px;
+  vertical-align: middle;
+  z-index: 100;
+  text-align: center;
+  background-color: #483D8B;
+
+}
+
+.hide-start {
+  display: none;
+}
+
+.start-btn {
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  background-color: #808080;
 }
