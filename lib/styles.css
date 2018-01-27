@@ -3,13 +3,12 @@ canvas {
   display: inline-block;
   vertical-align: top;
   border: 5px solid black;
-  z-index: 1;
+  z-index: 5;
 }
 
 div {
   margin: 0 auto;
   width: 80%;
-
 }
 
 p {
@@ -22,16 +21,14 @@ h1 {
 }
 
 h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
   font-size: 1.5em;
 }
-
-
 
 .score-text {
   display: inline-block;
 }
-
+  
 .game {
   display: block;
   margin: 0 auto;
@@ -41,18 +38,61 @@ h3 {
   margin-right: 80px;
 }
 
+.end-game {
+  display: block;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 450px;
+  width: 600px;
+  z-index: 101;
+  text-align: center;
+  color: #eee;
+  background-color: #483D8B;
+  top: 20px;
+}
+
+.hide-end-game {
+   display: block;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 450px;
+  width: 600px;
+  z-index: -5;
+  text-align: center;
+  color: #eee;
+  background-color: #483D8B;
+  top: 20px; 
+}
+
+.replay-button {
+  height: 40px;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.replay-button:hover {
+  background-color: #00BFFF;
+}
+
+.hide-end-game {
+  display: none;
+}
+
 .start-game {
   display: block;
   position: absolute;
   margin: 10% 25%;
   padding: 3%;
-  height: 430px;
+  height: 450px;
   width: 600px;
-  vertical-align: middle;
   z-index: 100;
   text-align: center;
+  color: #eee;
   background-color: #483D8B;
-
 }
 
 .hide-start {
@@ -61,7 +101,8 @@ h3 {
 
 .start-btn {
   height: 40px;
-  width: 80px;
-  font-size: 20px;
-  background-color: #808080;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 2em;
 }
+
