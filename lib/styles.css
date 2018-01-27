@@ -3,19 +3,30 @@ canvas {
   display: inline-block;
   vertical-align: top;
   border: 5px solid black;
+  z-index: 5;
+}
+
+div {
+  margin: 0 auto;
+  width: 80%;
 }
 
 p {
-  display: inline-block;
+  font-size: 1.3em; 
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3em;
+  margin: 10px;
 }
 
-h2 {
-  font-size: 4em;
+h3 {
   margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+.score-text {
+  display: inline-block;
 }
   
 .game {
@@ -28,17 +39,31 @@ h2 {
 }
 
 .end-game {
-  /*position: absolute;*/
-  /*z-index: 101;*/
-  /*top: 0;*/
-  /*left: 165px;*/
-  height: 800px;
-  width: 1000px;
-  border: 1px solid black;
+  display: block;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 450px;
+  width: 600px;
+  z-index: 101;
   text-align: center;
-  padding: 20px;
-  background-color: #483D8B;
   color: #eee;
+  background-color: #483D8B;
+  top: 20px;
+}
+
+.hide-end-game {
+   display: block;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 450px;
+  width: 600px;
+  z-index: -5;
+  text-align: center;
+  color: #eee;
+  background-color: #483D8B;
+  top: 20px; 
 }
 
 .replay-button {
@@ -46,6 +71,7 @@ h2 {
   width: 300px;
   border-radius: 30px 30px 30px 30px;
   font-size: 2em;
+  margin-top: 2em;
 }
 
 .replay-button:hover {
@@ -54,5 +80,29 @@ h2 {
 
 .hide-end-game {
   display: none;
+}
+
+.start-game {
+  display: block;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 450px;
+  width: 600px;
+  z-index: 100;
+  text-align: center;
+  color: #eee;
+  background-color: #483D8B;
+}
+
+.hide-start {
+  display: none;
+}
+
+.start-btn {
+  height: 40px;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 2em;
 }
 
