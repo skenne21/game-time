@@ -74,7 +74,7 @@ button {
   
 }
 
-.replay-button:hover {
+button:hover {
   background-color: #00BFFF;
 }
 
