@@ -43,7 +43,7 @@ h3 {
   position: absolute;
   margin: 10% 25%;
   padding: 3%;
-  height: 450px;
+  height: 470px;
   width: 600px;
   z-index: 101;
   text-align: center;
@@ -52,7 +52,7 @@ h3 {
   top: 20px;
 }
 
-.hide-end-game {
+/*.hide-end-game {
   display: block;
   position: absolute;
   margin: 10% 25%;
@@ -64,14 +64,14 @@ h3 {
   color: #eee;
   background-color: #483D8B;
   top: 20px; 
-}
+}*/
 
-.replay-button {
+button {
   height: 40px;
   width: 300px;
   border-radius: 30px 30px 30px 30px;
   font-size: 2em;
-  margin-top: 2em;
+  
 }
 
 .replay-button:hover {
@@ -87,7 +87,7 @@ h3 {
   position: absolute;
   margin: 10% 25%;
   padding: 3%;
-  height: 450px;
+  height: 470px;
   width: 600px;
   z-index: 100;
   text-align: center;
@@ -99,10 +99,26 @@ h3 {
   display: none;
 }
 
-.start-btn {
-  height: 40px;
-  width: 300px;
-  border-radius: 30px 30px 30px 30px;
-  font-size: 2em;
+.level-up {
+  display: block;
+  top: 20px;
+  position: absolute;
+  margin: 10% 25%;
+  padding: 3%;
+  height: 450px;
+  width: 600px;
+  z-index: 103;
+  text-align: center;
+  color: #eee;
+  background-color: #483D8B;
 }
 
+.hide-level-Up {
+  display: none;
+}
+
+.restart-level-button, 
+.replay-button {
+ margin-top: 2em;
+}
+  
