@@ -1,4 +1,4 @@
-const  { assert } = require('chai');
+const { assert } = require('chai');
 const Block = require('../lib/Block.js');
 
 describe( 'Block', function() {
@@ -23,7 +23,7 @@ describe( 'Block', function() {
   });
 
   it('should have a default color', function() {
-    assert.equal(block.color, 'green');
+    assert.equal(block.color, '#73A557');
   });
 
   it('should have a default hit ball value to false', function() {

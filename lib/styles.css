@@ -1,17 +1,14 @@
 body {
-  /*background-image: url(../breakout_backGround-2.png);*/
   background-color: #737199;
 }
 
-
 canvas {
   display: block;
-  margin: auto;
-  border: 5px solid black;
-  vertical-align: middle;
   z-index: 5;
+  border: 5px solid black;
+  margin: 75px auto;
   background-image: url(../breakout_backGround-2.png);
-
+  vertical-align: middle;
 }
 
 div {
@@ -24,13 +21,24 @@ p {
 }
 
 h1 {
-  font-size: 3em;
   margin: 10px;
+  font-size: 3em;
 }
 
 h3 {
   margin-bottom: 2em;
   font-size: 1.5em;
+}
+
+button {
+  height: 40px;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 2em;
+}
+
+button:hover {
+  background-color: #00BFFF;
 }
 
 .score-text {
@@ -49,27 +57,15 @@ h3 {
 .end-game {
   display: block;
   position: absolute;
+  top: 20px;
+  z-index: 101;
+  height: 470px;
   margin: 3.5% 25%;
   padding: 3%;
-  height: 470px;
   width: 600px;
-  z-index: 101;
-  text-align: center;
-  color: #eee;
   background-color: #483D8B;
-  top: 20px;
-}
-
-button {
-  height: 40px;
-  width: 300px;
-  border-radius: 30px 30px 30px 30px;
-  font-size: 2em;
-  
-}
-
-button:hover {
-  background-color: #00BFFF;
+  color: #eee;
+  text-align: center;
 }
 
 .hide-end-game {
@@ -79,14 +75,14 @@ button:hover {
 .start-game {
   display: block;
   position: absolute;
-  margin: 3.5% 25%;
-  padding: 3%;
+  z-index: 100;
   height: 470px;
   width: 600px;
-  z-index: 100;
-  text-align: center;
-  color: #eee;
+  margin: 3.5% 25%;
+  padding: 3%;
   background-color: #483D8B;
+  color: #eee;
+  text-align: center;
 }
 
 .hide-start {
@@ -95,16 +91,16 @@ button:hover {
 
 .level-up {
   display: block;
-  top: 20px;
   position: absolute;
-  margin: 3.5% 25%;
-  padding: 3%;
+  top: 20px;
+  z-index: 103;
   height: 450px;
   width: 600px;
-  z-index: 103;
-  text-align: center;
-  color: #eee;
+  margin: 3.5% 25%;
+  padding: 3%;
   background-color: #483D8B;
+  color: #eee;
+  text-align: center;
 }
 
 .hide-level-up {
