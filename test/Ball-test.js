@@ -42,9 +42,7 @@ describe( 'Ball', function() {
     assert.equal(ball.hitBottom, false);
   })
 
-  // it('should be able to move', function() {
-  //   assert.equal(ball.moveBall(), (ball.x + ball.x  = ball.dx));
-  //   assert.equal(ball.moveBall(), (ball.y + ball.y  = ball.yx))
-  // })
-
+  it ('should have a ball color', function() {
+    assert.equal(ball.ballColor, '#eee');
+  })
 })
