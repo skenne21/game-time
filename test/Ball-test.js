@@ -45,4 +45,33 @@ describe( 'Ball', function() {
   it ('should have a ball color', function() {
     assert.equal(ball.ballColor, '#eee');
   })
+
+  it ('should have an x value that changes upon moving to equal the x-velocity', function() {
+    assert.equal(ball.x, 30);
+    ball.moveBall();
+    assert.equal(ball.x, 38);
+  })
+
+  it ('should have a y value that changes upon moving to equal the y-velocity', function() {
+      assert.equal(ball.y, 30);
+    ball.moveBall();
+    assert.equal(ball.y, 38);
+  })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
