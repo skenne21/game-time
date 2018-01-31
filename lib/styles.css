@@ -107,6 +107,24 @@ button:hover {
   display: none;
 }
 
+.game-won {
+  display: block;
+  position: absolute;
+  top: 20px;
+  z-index: 105;
+  height: 450px;
+  width: 600px;
+  margin: 3.5% 25%;
+  padding: 3%;
+  background-color: #483D8B;
+  color: #eee;
+  text-align: center;
+}
+
+.hide-game-won {
+  display: none;
+}
+
 .restart-level-button, 
 .replay-button {
  margin-top: 2em;
