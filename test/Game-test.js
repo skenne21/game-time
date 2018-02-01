@@ -2,6 +2,7 @@ const { assert } = require('chai');
 const Game = require('../lib/Game.js');
 const Block = require('../lib/Block.js');
 const Ball = require('../lib/Ball.js');
+const Paddle = require('../lib/Paddle.js')
 
 describe( 'Game', function() {
   let game;
@@ -72,6 +73,38 @@ describe( 'Game', function() {
     assert.equal(game.blocks.length, 0);
     blocks = game.createArrayOfBlocks();
     assert.equal(game.blocks.length, 30);
+  })
+
+  it( 'should be able to level up the ball when the game level increments', function() {
+    const ball = new Ball(30, 30, 20, 8, 8);
+    game.level = 2
+    assert.equal(ball.x, 30);
+    assert.equal(ball.y, 30);
+    assert.equal(ball.radius, 20)
+    assert.equal(ball.dx, 8);
+    assert.equal(ball.dy, 8);
+
+    game.levelUpBall(ball);
+
+    assert.equal(ball.x, 390);
+    assert.equal(ball.y, 500);
+    assert.equal(ball.radius, 20);
+    assert.equal(ball.dx, 11);
+    assert.equal(ball.dy, 11);
+
+    game.level = 3;
+
+    game.levelUpBall(ball);
+    assert.equal(ball.radius, 17)
+  })
+
+  it('should be able to level up the paddle on level 3', function() {
+    const paddle = new Paddle(30, 30, 20, 20)
+    game.level = 3;
+
+    assert.equal(paddle.w, 20);
+    game.levelUpPaddle(paddle);
+    assert.equal(paddle.w, 150);
   })
 })
 
