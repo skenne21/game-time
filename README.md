@@ -23,4 +23,5 @@ You can run the testing suite with `npm test`.
 We see making this game have more levels in the future and making bonus features such as when the blocks are broken they drop to balls or give the user more lives. 
 
 ## Screenshot
-![full page screenshot](./fullscreen.png)
+![Game screen screenshot](./GameScreen.png)
+![Home screen screenshot](./Homepage.png)
