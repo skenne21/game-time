@@ -4,7 +4,7 @@
 
 ## Description
 
-This project served as practice with getting a solid understanding of HTML Canvas and ES6 Javascript classes. Not being a lifetime gamers My partner and I wanted to create a game that was visually exciting for the user and was easy to play for any user.  We created the classic game breakout which allows users to advance to different levels which get progressively harder with a smaller ball size and increasing the velocity and speed as the game advances in levels.
+This project served as practice with getting a solid understanding of HTML Canvas and ES6 Javascript classes. As non-lifetime gamers My partner and I wanted to create a game that was visually exciting for the user and was easy to play for any user.  We created the classic game breakout which allows users to advance to different levels which get progressively harder with a smaller ball size and increasing the velocity and speed as the game advances in levels.
 
 ## Set Up
 
