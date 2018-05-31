@@ -1,6 +1,6 @@
 # Game Time
 
-## Group: [Ngoc Phan](https://github.com/nphan24)and [Sabrina Kennedy](https://github.com/skenne21)
+## Group: [Ngoc Phan](https://github.com/nphan24) and [Sabrina Kennedy](https://github.com/skenne21)
 #### [Game Live](http://skenne21-game-time.surge.sh/)
 
 ## Description
